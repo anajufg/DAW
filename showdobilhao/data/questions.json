@@ -1,0 +1,32 @@
+[
+  {
+    "statement": "Qual é a capital do Brasil?",
+    "options": ["Brasília", "Rio de Janeiro", "São Paulo", "Salvador"],
+    "answer": 0
+  },
+  {
+    "statement": "Em que ano o homem chegou à Lua?",
+    "options": ["1965", "1969", "1972", "1980"],
+    "answer": 1
+  },
+  {
+    "statement": "Qual é o símbolo químico da água?",
+    "options": ["O2", "H2", "H2O", "CO2"],
+    "answer": 2
+  },
+  {
+    "statement": "Quem pintou a Mona Lisa?",
+    "options": [
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Leonardo da Vinci",
+      "Michelangelo"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "Qual é o maior planeta do sistema solar?",
+    "options": ["Terra", "Marte", "Júpiter", "Saturno"],
+    "answer": 2
+  }
+]
