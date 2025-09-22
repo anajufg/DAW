@@ -1,38 +1,48 @@
 <?php
-require_once 'classes/User.php';
-if (session_status() == PHP_SESSION_NONE) session_start();
-\$error = '';
-if (\$_SERVER['REQUEST_METHOD'] === 'POST') {
-\$nome = trim(\$_POST['nome']);
-\$email = trim(\$_POST['email']);
-\$login = trim(\$_POST['login']);
-\$senha = \$_POST['senha'];
-if (!\$nome || !\$email || !\$login || !\$senha) {
-\$error = 'Preencha todos os campos.';
-} else {
-if (User::findByLogin(\$login)) {
-\$error = 'Login já existe.';
-} else {
-\$hash = password_hash(\$senha, PASSWORD_DEFAULT);
-User::saveUser(['nome'=>\$nome,'email'=>\$email,'login'=>\$login,'senha'=>\$hash]);
-header('Location: login.php');
-exit;
-}
-}
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $users = json_decode(file_get_contents("users.json"), true) ?? [];
+
+    $user = $_POST["username"];
+    $pass = $_POST["password"];
+
+    if (!isset($users[$user])) {
+        $users[$user] = ["password" => $pass, "score" => 0];
+        file_put_contents("users.json", json_encode($users, JSON_PRETTY_PRINT));
+        header("Location: login.php");
+        exit;
+    } else {
+        $erro = "Usuário já existe!";
+    }
 }
 ?>
-<!doctype html>
-<html><head><meta charset="utf-8"><title>Cadastro</title></head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Show do Bilhão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<?php include 'inc/menu.inc'; ?>
-<h2>Cadastro</h2>
-<?php if (\$error): ?><p style="color:red;"><?=htmlspecialchars(\$error)?></p><?php endif; ?>
-<form method="post">
-<label>Nome: <input name="nome"></label><br>
-<label>Email: <input name="email"></label><br>
-<label>Login: <input name="login"></label><br>
-<label>Senha: <input type="password" name="senha"></label><br>
-<button>Registrar</button>
-</form>
-<?php include 'inc/rodape.inc'; ?>
-</body></html>
+<div class="container">
+    <header class="header">
+        <div>
+            <div class="title">Cadastro</div>
+            <div class="subtitle">Crie sua conta para jogar</div>
+        </div>
+    </header>
+
+    <main class="stage">
+        <form method="post" class="form">
+            <div class="question-text">Preencha os campos:</div>
+            <?php if (!empty($erro)) echo "<p style='color:red;'>$erro</p>"; ?>
+            <input type="text" name="username" placeholder="Usuário" required><br><br>
+            <input type="password" name="password" placeholder="Senha" required><br><br>
+            <div class="button-group">
+                <button type="submit" class="btn">Cadastrar</button>
+                <a href="index.php" class="btn secondary">Voltar</a>
+            </div>
+        </form>
+    </main>
+</div>
+</body>
+</html>

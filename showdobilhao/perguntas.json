@@ -1,0 +1,157 @@
+[
+  {
+    "pergunta": "Quem pintou a Mona Lisa?",
+    "alternativas": {
+      "a": "Michelangelo",
+      "b": "Leonardo da Vinci",
+      "c": "Raphael",
+      "d": "Donatello"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual é o maior planeta do sistema solar?",
+    "alternativas": {
+      "a": "Terra",
+      "b": "Saturno",
+      "c": "Júpiter",
+      "d": "Marte"
+    },
+    "correta": "c"
+  },
+  {
+    "pergunta": "Qual país é conhecido como o país do sol nascente?",
+    "alternativas": {
+      "a": "China",
+      "b": "Japão",
+      "c": "Coreia do Sul",
+      "d": "Tailândia"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Em que ano o homem pisou na Lua pela primeira vez?",
+    "alternativas": { "a": "1965", "b": "1969", "c": "1972", "d": "1959" },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual é o elemento químico representado pelo símbolo 'O'?",
+    "alternativas": {
+      "a": "Ouro",
+      "b": "Oxigênio",
+      "c": "Ósmio",
+      "d": "Ozônio"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Quem escreveu 'Dom Casmurro'?",
+    "alternativas": {
+      "a": "José de Alencar",
+      "b": "Machado de Assis",
+      "c": "Jorge Amado",
+      "d": "Clarice Lispector"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual é a moeda oficial do Japão?",
+    "alternativas": { "a": "Yuan", "b": "Yen", "c": "Won", "d": "Dólar" },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Quantos continentes existem no planeta Terra?",
+    "alternativas": { "a": "5", "b": "6", "c": "7", "d": "8" },
+    "correta": "c"
+  },
+  {
+    "pergunta": "Qual é o rio mais longo do mundo?",
+    "alternativas": {
+      "a": "Nilo",
+      "b": "Amazonas",
+      "c": "Yangtzé",
+      "d": "Mississippi"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual animal é conhecido como o 'rei da selva'?",
+    "alternativas": {
+      "a": "Leão",
+      "b": "Elefante",
+      "c": "Tigre",
+      "d": "Guepardo"
+    },
+    "correta": "a"
+  },
+  {
+    "pergunta": "Quem descobriu a América em 1492?",
+    "alternativas": {
+      "a": "Vasco da Gama",
+      "b": "Cristóvão Colombo",
+      "c": "Pedro Álvares Cabral",
+      "d": "Fernão de Magalhães"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual é o maior oceano do planeta?",
+    "alternativas": {
+      "a": "Atlântico",
+      "b": "Índico",
+      "c": "Pacífico",
+      "d": "Ártico"
+    },
+    "correta": "c"
+  },
+  {
+    "pergunta": "Em que país se localizam as pirâmides de Gizé?",
+    "alternativas": { "a": "México", "b": "Egito", "c": "Peru", "d": "Sudão" },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual é o maior deserto do mundo?",
+    "alternativas": {
+      "a": "Saara",
+      "b": "Gobi",
+      "c": "Atacama",
+      "d": "Kalahari"
+    },
+    "correta": "a"
+  },
+  {
+    "pergunta": "Quem foi Albert Einstein?",
+    "alternativas": {
+      "a": "Um pintor famoso",
+      "b": "Um físico teórico",
+      "c": "Um explorador",
+      "d": "Um compositor"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual é a língua mais falada no mundo?",
+    "alternativas": {
+      "a": "Inglês",
+      "b": "Mandarim",
+      "c": "Espanhol",
+      "d": "Hindi"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual país sediou a Copa do Mundo de 2018?",
+    "alternativas": {
+      "a": "Brasil",
+      "b": "Rússia",
+      "c": "Alemanha",
+      "d": "França"
+    },
+    "correta": "b"
+  },
+  {
+    "pergunta": "Qual é a fórmula química da água?",
+    "alternativas": { "a": "H2O", "b": "CO2", "c": "O2", "d": "NaCl" },
+    "correta": "a"
+  }
+]
